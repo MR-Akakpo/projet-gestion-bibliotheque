@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion de Bibliothèque</title>
+    <title>Bibliothèque Pro</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
 
         <h1>📚 Gestion de Bibliothèque</h1>
 
-        <input type="text" id="searchInput" placeholder="Rechercher un livre...">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Rechercher un livre..."
+        >
 
         <table>
+
             <thead>
                 <tr>
                     <th>Titre</th>
@@ -27,25 +33,79 @@
             </thead>
 
             <tbody id="bookTableBody"></tbody>
+
         </table>
 
         <h2>Ajouter un livre</h2>
 
         <form id="bookForm">
 
-            <input type="text" id="title" placeholder="Titre" required>
+            <input
+                type="text"
+                id="title"
+                placeholder="Titre"
+                required
+            >
 
-            <input type="text" id="author" placeholder="Auteur" required>
+            <input
+                type="text"
+                id="author"
+                placeholder="Auteur"
+                required
+            >
 
-            <input type="number" id="year" placeholder="Année" required>
+            <input
+                type="number"
+                id="year"
+                placeholder="Année"
+                required
+            >
 
-            <input type="number" id="price" placeholder="Prix" required>
+            <input
+                type="number"
+                id="price"
+                placeholder="Prix"
+                required
+            >
 
-            <input type="text" id="image" placeholder="URL image couverture" required>
+            <input
+                type="text"
+                id="image"
+                placeholder="URL image couverture"
+                required
+            >
 
-            <button type="submit">Ajouter</button>
+            <button type="submit">
+                Ajouter
+            </button>
 
         </form>
+
+    </div>
+
+    <!-- MODAL -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <img id="modalImage">
+
+            <div>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalAuthor"></p>
+
+                <p id="modalYear"></p>
+
+                <p id="modalPrice"></p>
+
+            </div>
+
+        </div>
 
     </div>
 
