@@ -1,101 +1,325 @@
+/* ================================================= */
+/* BODY */
+/* ================================================= */
+
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: #f3f4f6;
+
     margin: 0;
-    padding: 20px;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding-top: 45px;
+
+    color: #222;
+
 }
+
+/* ================================================= */
+/* CONTAINER */
+/* ================================================= */
 
 .container {
-    width: 70%;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
+
+    width: 46%;
+
+    background-color: #ffffff;
+
+    padding: 22px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+
 }
+
+/* ================================================= */
+/* TITRE */
+/* ================================================= */
 
 h1 {
-    margin-bottom: 20px;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    margin-bottom: 22px;
+
+    color: #111827;
+
 }
 
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+/* ================================================= */
+/* RECHERCHE */
+/* ================================================= */
+
+.search-box {
+
+    margin-bottom: 18px;
+
 }
+
+.search-box input {
+
+    width: 100%;
+
+    padding: 11px 13px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    background-color: white;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+}
+
+/* ================================================= */
+/* TABLEAU */
+/* ================================================= */
 
 table {
+
     width: 100%;
+
     border-collapse: collapse;
-    margin-top: 15px;
-    margin-bottom: 25px;
+
+    margin-bottom: 26px;
+
 }
 
-table th,
-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
+/* ================================================= */
+/* HEADER */
+/* ================================================= */
 
 table th {
-    background: #f2f2f2;
+
+    background-color: #f3f4f6;
+
+    padding: 15px 11px;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #111827;
+
 }
+
+/* ================================================= */
+/* CELLULES */
+/* ================================================= */
+
+table td {
+
+    padding: 17px 11px;
+
+    font-size: 14px;
+
+    color: #374151;
+
+    border-bottom: 1px solid #f1f1f1;
+
+}
+
+/* ================================================= */
+/* ACTIONS */
+/* ================================================= */
+
+.actions {
+
+    display: flex;
+
+    gap: 5px;
+
+}
+
+/* ================================================= */
+/* BOUTONS */
+/* ================================================= */
 
 button {
+
     border: none;
-    padding: 7px 12px;
-    cursor: pointer;
-    border-radius: 4px;
+
+    padding: 8px 13px;
+
+    border-radius: 6px;
+
     color: white;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
 }
 
+/* ================================================= */
+/* COULEURS */
+/* ================================================= */
+
 .view-btn {
-    background: green;
+
+    background-color: #28a745;
+
 }
 
 .edit-btn {
-    background: #007bff;
+
+    background-color: #0d6efd;
+
 }
 
 .delete-btn {
-    background: red;
+
+    background-color: #dc3545;
+
 }
 
-form button {
-    background: #007bff;
+.submit-btn {
+
+    background-color: #0d6efd;
+
 }
+
+/* ================================================= */
+/* FORMULAIRE */
+/* ================================================= */
+
+h2 {
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 16px;
+
+    color: #111827;
+
+}
+
+/* ================================================= */
+/* INPUTS */
+/* ================================================= */
+
+form input {
+
+    width: 100%;
+
+    padding: 11px 13px;
+
+    margin-bottom: 11px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    background-color: white;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+}
+
+/* ================================================= */
+/* MODAL */
+/* ================================================= */
 
 .modal {
+
     display: none;
+
     position: fixed;
-    z-index: 10;
+
+    z-index: 1000;
+
     left: 0;
+
     top: 0;
+
     width: 100%;
+
     height: 100%;
-    background: rgba(0,0,0,0.5);
+
+    background-color: rgba(0,0,0,0.5);
+
 }
+
+/* ================================================= */
+/* CONTENU MODAL */
+/* ================================================= */
 
 .modal-content {
-    background: white;
-    width: 50%;
-    margin: 10% auto;
-    padding: 20px;
+
+    background-color: white;
+
+    width: 620px;
+
+    margin: 8% auto;
+
+    padding: 22px;
+
+    border-radius: 10px;
+
     display: flex;
-    gap: 20px;
-    border-radius: 5px;
+
+    gap: 22px;
+
     position: relative;
+
 }
+
+/* ================================================= */
+/* IMAGE */
+/* ================================================= */
 
 .modal-content img {
-    width: 180px;
+
+    width: 200px;
+
+    border-radius: 8px;
+
 }
 
+/* ================================================= */
+/* FERMETURE */
+/* ================================================= */
+
 .close {
+
     position: absolute;
-    right: 15px;
+
     top: 10px;
-    font-size: 22px;
+
+    right: 15px;
+
+    font-size: 26px;
+
     cursor: pointer;
+
+    color: #555;
+
+    font-weight: 700;
+
 }

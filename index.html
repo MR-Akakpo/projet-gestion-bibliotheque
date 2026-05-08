@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliothèque Pro</title>
+
+    <title>Gestion de Bibliothèque</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <div class="container">
 
-        <h1>📚 Gestion de Bibliothèque</h1>
+        <!-- TITRE -->
 
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Rechercher un livre..."
-        >
+        <h1>
+            📚 Gestion de Bibliothèque
+        </h1>
 
-        <table>
+        <!-- RECHERCHE -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Rechercher un livre..."
+            >
+
+        </div>
+
+        <!-- TABLEAU -->
+
+        <table id="booksTable">
 
             <thead>
+
                 <tr>
+
                     <th>Titre</th>
+
                     <th>Auteur</th>
+
                     <th>Année</th>
+
                     <th>Prix</th>
+
                     <th>Actions</th>
+
                 </tr>
+
             </thead>
 
-            <tbody id="bookTableBody"></tbody>
+            <tbody id="booksBody">
+
+                <!-- Livres générés dynamiquement -->
+
+            </tbody>
 
         </table>
+
+        <!-- FORMULAIRE -->
 
         <h2>Ajouter un livre</h2>
 
@@ -75,7 +106,10 @@
                 required
             >
 
-            <button type="submit">
+            <button
+                type="submit"
+                class="submit-btn"
+            >
                 Ajouter
             </button>
 
@@ -85,23 +119,32 @@
 
     <!-- MODAL -->
 
-    <div id="modal" class="modal">
+    <div id="bookModal" class="modal">
 
         <div class="modal-content">
 
             <span class="close">&times;</span>
 
-            <img id="modalImage">
+            <img id="modalImage" src="" alt="Couverture">
 
-            <div>
+            <div class="modal-info">
 
-                <h2 id="modalTitle"></h2>
+                <h3 id="modalTitle"></h3>
 
-                <p id="modalAuthor"></p>
+                <p>
+                    <strong>Auteur :</strong>
+                    <span id="modalAuthor"></span>
+                </p>
 
-                <p id="modalYear"></p>
+                <p>
+                    <strong>Année :</strong>
+                    <span id="modalYear"></span>
+                </p>
 
-                <p id="modalPrice"></p>
+                <p>
+                    <strong>Prix :</strong>
+                    <span id="modalPrice"></span>
+                </p>
 
             </div>
 
@@ -112,4 +155,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
