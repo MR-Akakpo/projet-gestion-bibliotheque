@@ -18,7 +18,7 @@ body {
 
     align-items: flex-start;
 
-    padding-top: 35px;
+    padding-top: 40px;
 
     color: #222;
 
@@ -30,13 +30,13 @@ body {
 
 .container {
 
-    width: 72%;
+    width: 50%;
 
     background-color: #ffffff;
 
-    padding: 32px;
+    padding: 28px;
 
-    border-radius: 14px;
+    border-radius: 12px;
 
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 
@@ -48,11 +48,11 @@ body {
 
 h1 {
 
-    font-size: 34px;
+    font-size: 31px;
 
     font-weight: 700;
 
-    margin-bottom: 26px;
+    margin-bottom: 24px;
 
     color: #111827;
 
@@ -64,7 +64,7 @@ h1 {
 
 .search-box {
 
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 
 }
 
@@ -72,13 +72,13 @@ h1 {
 
     width: 100%;
 
-    padding: 14px 16px;
+    padding: 12px 14px;
 
     border: 1px solid #e5e7eb;
 
-    border-radius: 9px;
+    border-radius: 8px;
 
-    font-size: 16px;
+    font-size: 17px;
 
     background-color: white;
 
@@ -98,9 +98,7 @@ table {
 
     border-collapse: collapse;
 
-    margin-bottom: 34px;
-
-    table-layout: auto;
+    margin-bottom: 30px;
 
 }
 
@@ -112,7 +110,7 @@ table th {
 
     background-color: #f3f4f6;
 
-    padding: 18px 16px;
+    padding: 16px 14px;
 
     text-align: left;
 
@@ -130,15 +128,15 @@ table th {
 
 table td {
 
-    padding: 22px 16px;
+    padding: 20px 14px;
 
-    font-size: 16px;
+    font-size: 17px;
 
     color: #374151;
 
     border-bottom: 1px solid #f1f1f1;
 
-    vertical-align: middle;
+    white-space: nowrap;
 
 }
 
@@ -150,9 +148,7 @@ table td {
 
     display: flex;
 
-    gap: 8px;
-
-    white-space: nowrap;
+    gap: 6px;
 
 }
 
@@ -164,9 +160,9 @@ button {
 
     border: none;
 
-    padding: 10px 16px;
+    padding: 9px 14px;
 
-    border-radius: 8px;
+    border-radius: 7px;
 
     color: white;
 
@@ -212,11 +208,11 @@ button {
 
 h2 {
 
-    font-size: 32px;
+    font-size: 23px;
 
     font-weight: 700;
 
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 
     color: #111827;
 
@@ -230,15 +226,15 @@ form input {
 
     width: 100%;
 
-    padding: 14px 16px;
+    padding: 12px 14px;
 
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 
     border: 1px solid #e5e7eb;
 
-    border-radius: 9px;
+    border-radius: 8px;
 
-    font-size: 16px;
+    font-size: 15px;
 
     background-color: white;
 
@@ -280,13 +276,13 @@ form input {
 
     background-color: white;
 
-    width: 700px;
+    width: 650px;
 
     margin: 8% auto;
 
-    padding: 28px;
+    padding: 24px;
 
-    border-radius: 14px;
+    border-radius: 12px;
 
     display: flex;
 
