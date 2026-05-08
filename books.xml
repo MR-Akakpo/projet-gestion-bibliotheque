@@ -4,48 +4,48 @@
 
     <book>
 
-        <title>JavaScript Avancé</title>
+        <title>جَالِبَةُ الْمَرَاغِبِ (L'attracteur des aspirations)</title>
 
-        <author>Mouhamed Moustapha Diouf</author>
+        <author>Cheikh Ahmadou Bamba</author>
 
-        <year>2020</year>
+        <year>1885</year>
 
-        <price>5000</price>
+        <price>2000</price>
 
         <image>
-https://eloquentjavascript.net/img/cover.jpg
+https://i.postimg.cc/wB8QMw8M/large.jpg
         </image>
 
     </book>
 
     <book>
 
-        <title>Apprendre le DOM</title>
+        <title>قرة العين (La prunelle des yeux)</title>
 
-        <author>Mouhamed Moustapha Diouf</author>
+        <author>Cheikh Chuhaybu Mbacke</author>
 
-        <year>2022</year>
+        <year>1993</year>
 
-        <price>7000</price>
+        <price>2000</price>
 
         <image>
-https://eloquentjavascript.net/img/cover.jpg
+https://i.postimg.cc/Jz1XG0PP/content.jpg
         </image>
 
     </book>
 
     <book>
 
-        <title>Clean Code</title>
+        <title>Xarnu Bi (Le siecle)</title>
 
-        <author>Robert C. Martin</author>
+        <author>Cheikh Moussa Ka</author>
 
-        <year>2008</year>
+        <year>1945</year>
 
-        <price>12000</price>
+        <price>2000</price>
 
         <image>
-https://m.media-amazon.com/images/I/41xShlnTZTL.jpg
+https://i.postimg.cc/rFqs9bx0/images-(1).jpg
         </image>
 
     </book>
