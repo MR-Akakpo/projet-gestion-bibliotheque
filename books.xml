@@ -3,51 +3,19 @@
 <library>
 
     <book>
-
-        <title>جَالِبَةُ الْمَرَاغِبِ (L'attracteur des aspirations)</title>
-
-        <author>Cheikh Ahmadou Bamba</author>
-
-        <year>1885</year>
-
-        <price>2000</price>
-
-        <image>
-https://i.postimg.cc/wB8QMw8M/large.jpg
-        </image>
-
+        <title>JavaScript Avancé</title>
+        <author>Mouhamed Moustapha Diouf</author>
+        <year>2020</year>
+        <price>5000</price>
+        <image>https://eloquentjavascript.net/img/cover.jpg</image>
     </book>
 
     <book>
-
-        <title>قرة العين (La prunelle des yeux)</title>
-
-        <author>Cheikh Chuhaybu Mbacke</author>
-
-        <year>1993</year>
-
-        <price>2000</price>
-
-        <image>
-https://i.postimg.cc/Jz1XG0PP/content.jpg
-        </image>
-
-    </book>
-
-    <book>
-
-        <title>Xarnu Bi (Le siecle)</title>
-
-        <author>Cheikh Moussa Ka</author>
-
-        <year>1945</year>
-
-        <price>2000</price>
-
-        <image>
-https://i.postimg.cc/rFqs9bx0/images-(1).jpg
-        </image>
-
+        <title>Apprendre le DOM</title>
+        <author>Mouhamed Moustapha Diouf</author>
+        <year>2022</year>
+        <price>7000</price>
+        <image>https://eloquentjavascript.net/img/cover.jpg</image>
     </book>
 
 </library>

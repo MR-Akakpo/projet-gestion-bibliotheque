@@ -1,230 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Bibliothèque</title>
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Gestion Bibliothèque</title>
-
-    <!-- CSS -->
-
-    <link rel="stylesheet"
-          href="style.css">
-
-    <!-- GOOGLE FONT -->
- 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
-
-    <!-- FONT AWESOME -->
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- CONTAINER -->
 
     <div class="container">
 
-        <!-- HEADER -->
+        <h1>📚 Gestion de Bibliothèque</h1>
 
-        <header class="header">
+        <input type="text" id="searchInput" placeholder="Rechercher un livre...">
 
-            <div class="logo">
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Auteur</th>
+                    <th>Année</th>
+                    <th>Prix</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
 
-                <i class="fa-solid fa-book-open"></i>
+            <tbody id="bookTableBody"></tbody>
+        </table>
 
-                <h1>Gestion Bibliothèque</h1>
+        <h2>Ajouter un livre</h2>
 
-            </div>
+        <form id="bookForm">
 
-        </header>
+            <input type="text" id="title" placeholder="Titre" required>
 
-        <!-- SEARCH -->
+            <input type="text" id="author" placeholder="Auteur" required>
 
-        <section class="search-section">
+            <input type="number" id="year" placeholder="Année" required>
 
-            <div class="search-box">
+            <input type="number" id="price" placeholder="Prix" required>
 
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="image" placeholder="URL image couverture" required>
 
-                <input type="text"
-                       id="searchInput"
-                       placeholder="Rechercher un livre...">
+            <button type="submit">Ajouter</button>
 
-            </div>
-
-        </section>
-
-        <!-- TABLE -->
-
-        <section class="table-section">
-
-            <div class="table-card">
-
-                <table>
-
-                    <thead>
-
-                        <tr>
-
-                            <th>Titre</th>
-                            <th>Auteur</th>
-                            <th>Année</th>
-                            <th>Prix</th>
-                            <th>Actions</th>
-
-                        </tr>
-
-                    </thead>
-
-                    <tbody id="bookTableBody">
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </section>
-
-        <!-- FORM -->
-
-        <section class="form-section">
-
-            <div class="form-card">
-
-                <h2>
-
-                    <i class="fa-solid fa-circle-plus"></i>
-
-                    Ajouter un livre
-
-                </h2>
-
-                <form id="bookForm">
-
-                    <div class="form-group">
-
-                        <input type="text"
-                               id="title"
-                               placeholder="Titre du livre"
-                               required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <input type="text"
-                               id="author"
-                               placeholder="Nom de l'auteur"
-                               required>
-
-                    </div>
-
-                    <div class="form-row">
-
-                        <input type="number"
-                               id="year"
-                               placeholder="Année"
-                               required>
-
-                        <input type="number"
-                               id="price"
-                               placeholder="Prix"
-                               required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <input type="text"
-                               id="image"
-                               placeholder="URL image couverture"
-                               required>
-
-                    </div>
-
-                    <button type="submit"
-                            class="submit-btn">
-
-                        <i class="fa-solid fa-plus"></i>
-
-                        Ajouter
-
-                    </button>
-
-                </form>
-
-            </div>
-
-        </section>
+        </form>
 
     </div>
-
-    <!-- MODAL -->
-
-    <div class="modal"
-         id="bookModal">
-
-        <div class="modal-content">
-
-            <span class="close-btn">
-
-                &times;
-
-            </span>
-
-            <div class="modal-body">
-
-                <div class="modal-image">
-
-                    <img id="modalImage"
-                         src=""
-                         alt="Book">
-
-                </div>
-
-                <div class="modal-info">
-
-                    <h2 id="modalTitle"></h2>
-
-                    <p id="modalAuthor"></p>
-
-                    <p id="modalYear"></p>
-
-                    <p id="modalPrice"></p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- TOAST -->
-
-    <div id="toast"></div>
-
-    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
