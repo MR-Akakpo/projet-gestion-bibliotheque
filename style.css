@@ -326,7 +326,7 @@ form input {
 
 }  
 /* ================================================= */
-/* RESPONSIVE MOBILE */
+/* TABLE RESPONSIVE */
 /* ================================================= */
 
 .table-responsive {
@@ -337,52 +337,49 @@ form input {
 
 }
 
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
 @media screen and (max-width: 768px) {
 
     body {
 
-        padding: 12px;
+        padding: 10px;
 
-        align-items: flex-start;
-
+        display: block;
     }
 
     .container {
 
-        width: 95%;
+        width: 100%;
 
-        padding: 18px;
+        padding: 16px;
 
-        border-radius: 10px;
-
+        box-sizing: border-box;
     }
 
     h1 {
 
         font-size: 24px;
-
-        line-height: 1.3;
-
     }
 
     h2 {
 
         font-size: 22px;
-
     }
 
     table {
 
-        min-width: 700px;
+        min-width: 720px;
     }
 
     table th,
     table td {
 
-        font-size: 14px;
-
         padding: 14px 10px;
 
+        font-size: 14px;
     }
 
     .actions {
@@ -391,15 +388,19 @@ form input {
 
         flex-direction: row;
 
-        gap: 6px;
-
+        gap: 5px;
     }
 
     button {
 
-        font-size: 12px;
-
         padding: 8px 10px;
+
+        font-size: 12px;
+    }
+
+    form input {
+
+        font-size: 14px;
     }
 
     .modal-content {
@@ -408,14 +409,12 @@ form input {
 
         flex-direction: column;
 
-        align-items: center;
-
+        padding: 18px;
     }
 
     .modal-content img {
 
         width: 180px;
-
     }
 
 }
