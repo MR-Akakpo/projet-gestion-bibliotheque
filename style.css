@@ -329,11 +329,19 @@ form input {
 /* RESPONSIVE MOBILE */
 /* ================================================= */
 
+.table-responsive {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
 @media screen and (max-width: 768px) {
 
     body {
 
-        padding: 15px;
+        padding: 12px;
 
         align-items: flex-start;
 
@@ -341,7 +349,7 @@ form input {
 
     .container {
 
-        width: 100%;
+        width: 95%;
 
         padding: 18px;
 
@@ -353,6 +361,8 @@ form input {
 
         font-size: 24px;
 
+        line-height: 1.3;
+
     }
 
     h2 {
@@ -363,12 +373,7 @@ form input {
 
     table {
 
-        display: block;
-
-        overflow-x: auto;
-
-        white-space: nowrap;
-
+        min-width: 700px;
     }
 
     table th,
@@ -382,18 +387,19 @@ form input {
 
     .actions {
 
-        flex-direction: column;
+        display: flex;
 
-        gap: 5px;
+        flex-direction: row;
+
+        gap: 6px;
 
     }
 
     button {
 
-        width: 100%;
+        font-size: 12px;
 
-        font-size: 13px;
-
+        padding: 8px 10px;
     }
 
     .modal-content {
